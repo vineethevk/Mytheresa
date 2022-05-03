@@ -1,13 +1,18 @@
 import { Link } from "react-router-dom";
 import "./BottomNav.css";
 import { GoSearch } from 'react-icons/go'
+import { useState } from "react";
+import { Test } from "../../Pages/Test";
 
 export const BottomNav = () => {
+    const [dropdown, setDropdown] = useState(false);
+
     return (
         <div className="BottomNav">
             <div>
                 <ul>
-                    <li><Link to="/">NEW ARRIVALS</Link></li>
+                    <li onMouseEnter={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)}
+                    ><Link to="/">NEW ARRIVALS</Link></li>
                     <li><Link to="/">DESIGNERS</Link></li>
                     <li><Link to="/">CLOTHING</Link></li>
                     <li><Link to="/">SHOES</Link></li>
@@ -19,6 +24,8 @@ export const BottomNav = () => {
             <div className="Searchbar">
                 <input type={"text"} placeholder="Search for ..." /><button><GoSearch /></button>
             </div>
+            {(dropdown) && <Test />}
+
         </div>
     )
 }
