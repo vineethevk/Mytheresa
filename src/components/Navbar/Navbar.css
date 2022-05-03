@@ -1,0 +1,16 @@
+.Navbar {
+    width: 90%;
+    margin: auto;
+    margin-top: 0px;
+    letter-spacing: 0.8px;
+    font-size: 14px;
+}
+
+.Navbar a {
+    color: #a17575;
+    text-decoration: none;
+}
+
+.Navbar a:hover {
+    color: black;
+}

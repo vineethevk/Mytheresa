@@ -1,0 +1,31 @@
+.BottomNav {
+    display: flex;
+}
+
+.BottomNav ul {
+    list-style: none;
+    overflow: auto;
+}
+
+.BottomNav ul li {
+    float: left;
+    margin-right: 18px;
+}
+
+
+.Searchbar {
+    position: absolute;
+    right: 100px;
+    top: 138px;
+}
+
+.Searchbar input {
+    height: 30px;
+    width: 220px;
+}
+
+.Searchbar button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+}
