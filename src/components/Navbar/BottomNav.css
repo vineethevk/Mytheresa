@@ -20,12 +20,26 @@
 }
 
 .Searchbar input {
-    height: 30px;
-    width: 220px;
+    height: 28px;
+    width: 200px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+}
+
+.Searchbar div {
+    border: solid 1px grey;
 }
 
 .Searchbar button {
     border: none;
     background-color: transparent;
     font-size: 20px;
+}
+
+.Searchbar div button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    padding-top: 7px;
 }

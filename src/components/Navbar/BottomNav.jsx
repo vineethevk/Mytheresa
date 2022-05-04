@@ -5,14 +5,13 @@ import { useState } from "react";
 import { Test } from "../../Pages/Test";
 
 export const BottomNav = () => {
-    const [dropdown, setDropdown] = useState(false);
+    const [search, setSearch] = useState(false);
 
     return (
         <div className="BottomNav">
             <div>
                 <ul>
-                    <li onMouseEnter={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)}
-                    ><Link to="/">NEW ARRIVALS</Link></li>
+                    <li><Link to="/">NEW ARRIVALS</Link></li>
                     <li><Link to="/">DESIGNERS</Link></li>
                     <li><Link to="/">CLOTHING</Link></li>
                     <li><Link to="/">SHOES</Link></li>
@@ -22,9 +21,8 @@ export const BottomNav = () => {
                 </ul>
             </div>
             <div className="Searchbar">
-                <input type={"text"} placeholder="Search for ..." /><button><GoSearch /></button>
+                {search ? <div><input type={"text"} placeholder="Search for ..." /><button><GoSearch /></button></div> : <button onClick={() => setSearch(true)}><GoSearch /></button>}
             </div>
-            {(dropdown) && <Test />}
 
         </div>
     )
