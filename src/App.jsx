@@ -9,7 +9,7 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Test />}></Route>
+        {/* <Route path="/" element={<Dropdown data={dropdown} />}></Route> */}
       </Routes>
     </div>
   )
