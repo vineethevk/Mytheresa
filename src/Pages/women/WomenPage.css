@@ -3,9 +3,11 @@
       sans-serif;
       cursor: pointer;
   } */
-/* .container{ */
+.container {
+    width: 90%;
+    margin: auto;
+}
 
-/* } */
 .ha4 {
     text-align: center;
     text-transform: uppercase;
