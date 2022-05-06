@@ -47,6 +47,11 @@ export const BottomNav = ({ data }) => {
                         {search ? <div><input type={"text"} placeholder="Search for ..." /><button><GoSearch /></button></div> : <button onClick={() => setSearch(true)}><GoSearch /></button>}
                     </div>}
                 </div>
+                {/* <div className="BottomRight">
+                    <div className="Searchbar">
+                        {search ? <div><input type={"text"} placeholder="Search for ..." /><button><GoSearch /></button></div> : <button onClick={() => setSearch(true)}><GoSearch /></button>}
+                    </div>
+                </div> */}
             </div>
             <div className="Gap"></div>
         </div>
