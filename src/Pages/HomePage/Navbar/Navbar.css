@@ -1,0 +1,46 @@
+.Navbar {
+    width: 90%;
+    margin: auto;
+    margin-top: 0px;
+    letter-spacing: 0.8px;
+    font-size: 14px;
+}
+.Navbar a{
+    text-decoration: none;
+    color: #757575;
+}
+.Navbar .TopRight a {
+        font-family: Arial,Helvetica,sans-serif;
+    -webkit-text-size-adjust: 100%;
+    letter-spacing: .8px;
+    list-style: none;
+    font-size: 12px;
+    box-sizing: inherit;
+    color: #757575;
+    text-decoration: none;
+    background-color: transparent;
+    transition: color .4s ease-out;
+    display: block;
+    padding: 0;
+    font-weight: 700;
+}
+
+.Navbar .TopLeft a {
+    font-family: Arial,Helvetica,sans-serif;
+-webkit-text-size-adjust: 100%;
+letter-spacing: .8px;
+list-style: none;
+font-size: 15px;
+box-sizing: inherit;
+color: #303030;
+text-decoration: none;
+background-color: transparent;
+transition: color .4s ease-out;
+display: block;
+padding: 0;
+font-weight: 400;
+}
+
+.Navbar a:hover {
+    color: black;
+}
