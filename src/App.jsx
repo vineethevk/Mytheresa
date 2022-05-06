@@ -1,8 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import { Navbar } from "./components/Navbar/Navbar"
 import { Home } from "./Pages/HomePage/Home"
-import { BottomNav } from "./components/Navbar/BottomNav"
-import { Women, Men } from "./components/Navbar/NavData"
 import { LoginAndRegister } from "./Pages/LogIn/LoginAndRegister"
 
 function App() {
