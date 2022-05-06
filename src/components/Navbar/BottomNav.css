@@ -1,6 +1,41 @@
 .BottomNav {
     display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    justify-content: space-between;
+    position: relative;
 }
+
+.MainBottomNav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #ffffffe1;
+}
+
+.Gap {
+    height: 50px;
+    border-top: solid 1px #e4e4e4;
+}
+
+
+.A:hover .Dropdown {
+    visibility: visible;
+    /* z-index: 1; */
+    left: 40px;
+    margin-top: 15px;
+    font-size: 14px;
+
+}
+
+a {
+    color: #a17575;
+    text-decoration: none;
+}
+
 
 .BottomNav ul {
     list-style: none;
@@ -14,9 +49,8 @@
 
 
 .Searchbar {
-    position: absolute;
-    right: 100px;
-    top: 138px;
+    margin-top: 10px;
+
 }
 
 .Searchbar input {
@@ -42,4 +76,8 @@
     background-color: transparent;
     font-size: 20px;
     padding-top: 7px;
+}
+
+.BottomRight {
+    margin-right: 30px;
 }

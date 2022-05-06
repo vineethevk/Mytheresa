@@ -1,15 +1,19 @@
 import { Route, Routes } from "react-router-dom"
-import { Dropdown } from "./components/Navbar/Dropdown"
 import { Navbar } from "./components/Navbar/Navbar"
-import { Test } from "./Pages/Test"
+import { Home } from "./Pages/Home"
+import { BottomNav } from "./components/Navbar/BottomNav"
+import { Women, Men } from "./components/Navbar/NavData"
+import { LoginAndRegister } from "./Pages/LogIn/LoginAndRegister"
 
 function App() {
 
   return (
     <div>
       <Navbar />
+      <BottomNav data={Men} />
       <Routes>
-        {/* <Route path="/" element={<Dropdown data={dropdown} />}></Route> */}
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/login" element={<LoginAndRegister />}></Route>
       </Routes>
     </div>
   )

@@ -1,6 +1,10 @@
 .Dropdown {
-    width: 80%;
+    position: absolute;
+    visibility: hidden;
+    /* top: 175px; */
+    width: 95%;
     margin: auto;
+    background-color: white;
     border: solid 1px #EFEFEF;
 }
 
@@ -17,8 +21,9 @@
     padding-top: 20px;
     font-size: 16px;
 }
-.Title div{
-    width: 25%;
+
+.Title div {
+    width: 20%;
 }
 
 .option {
@@ -27,14 +32,13 @@
 }
 
 .option div {
-    width: 25%;
+    width: 20%;
 }
 
 #Image {
     /* background-image: url(https://img.mytheresa.com/media/static/raw/cms/l/MW_FLYOUT_CW17_2022/NA_FLYOUT-_19__20220428121816.jpg); */
     cursor: pointer;
-    width: 50%;
-    height: 450px;
+    width: 40%;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
