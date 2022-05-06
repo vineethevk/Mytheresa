@@ -1,0 +1,26 @@
+.myimg{
+    width: 84%;
+    height: 530px;
+    margin: 0% 8% 3% 8%;
+    background-image: url('https://img.mytheresa.com/media/static/raw/cms/l/Gate_Page/march_2022/Gatepage_April22_desktop_2x_20220330160200.jpg?imwidth=1180&imdensity=2');
+    display: flex;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* border: 1px solid green; */
+} 
+
+@media screen {
+    
+}
+.mwDiv{
+    /* margin: 21%; */
+    display: flex;
+    color: white;
+    font-size: 54px;
+    font-weight: 380;
+    align-items: center;
+    
+    justify-content: center;
+    /* border: 3px solid yellow; */
+    width:100%
+}
