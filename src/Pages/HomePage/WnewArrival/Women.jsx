@@ -1,4 +1,3 @@
-import React from "react";
 import "./Women.css";
 
 import "slick-carousel/slick/slick.css";

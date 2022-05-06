@@ -1,39 +1,27 @@
-import { Route, Routes } from "react-router-dom"
-import { BigdivKid } from "./components/Bigposter/BigdivKid"
-import { BigdivMW } from "./components/Bigposter/BigdivMW"
-import { MykidSlider } from "./components/KnewArrival/Kid"
-import { MymenSlider } from "./components/MnewArrival/Men"
+import { BigdivKid } from "./HomePage/Bigposter/BigdivKid"
+import { BigdivMW } from "./HomePage/Bigposter/BigdivMW"
+import { MykidSlider } from "./HomePage/KnewArrival/Kid"
+import { MymenSlider } from "./HomePage/MnewArrival/Men"
+// import { Navbar } from "./HomePage/Navbar/Navbar"
+import { Stickydiv } from "./HomePage/Sticky wraper/Stickydiv"
+import { MywomenSlider } from "./HomePage/WnewArrival/Women"
+import { Hrline } from "./HomePage/Navbar/Hrline"
 
 
 
-import { Navbar } from "./components/Navbar/Navbar"
-import { Stickydiv } from "./components/Sticky wraper/Stickydiv"
-import { MywomenSlider } from "./components/WnewArrival/Women"
-
-
-
-
-
-
-
-import { Test } from "./Pages/Test"
-
-function App() {
+export const Home = () => {
 
   return (
     <div>
-      <Navbar />
-      <Stickydiv/>
-      <BigdivMW/>
-      <BigdivKid/>
-      <MywomenSlider/>
-      <MymenSlider/>
-      <MykidSlider/>
-      
-      <Routes> 
-      </Routes>
+      <Hrline />
+      <br />
+      <Stickydiv />
+      <BigdivMW />
+      <BigdivKid />
+      <MywomenSlider />
+      <MymenSlider />
+      <MykidSlider />
     </div>
   )
 }
 
-export default App
