@@ -7,6 +7,6 @@ export const Navbar = () => {
     return <div className="Navbar">
         <TopNav />
         <MiddleNav />
-        <BottomNav />
+        {/* <BottomNav /> */}
     </div>
 }
