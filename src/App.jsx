@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import { Navbar } from "./components/Navbar/Navbar"
+import { Womens } from "./Pages/women/Womens"
 import { WomensList } from "./Pages/women/WomensProduct"
-import { Womens } from "./Pages/women/WomensPage"
 
 function App() {
 

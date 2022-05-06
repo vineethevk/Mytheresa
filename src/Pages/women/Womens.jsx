@@ -1,5 +1,5 @@
 
-import "./WomensPage.css"
+import "./Womens.css"
 // import "../../components/Navbar/BottomNav.css"
 import { BottomNav } from "../../components/Navbar/BottomNav"
 
