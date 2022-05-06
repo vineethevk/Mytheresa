@@ -1,8 +1,7 @@
 import { Route, Routes } from "react-router-dom"
+import { Dropdown } from "./components/Navbar/Dropdown"
 import { Navbar } from "./components/Navbar/Navbar"
-import { Womens } from "./Pages/women/Womens"
-import { WomensList } from "./Pages/women/WomensProduct"
-import {Womens} from "./Pages/women/Womens"
+import { Test } from "./Pages/Test"
 
 function App() {
 
@@ -10,8 +9,6 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/womens" element={<Womens />}></Route>
-        <Route path="/womenproducts" element={<WomensList />}></Route>
         {/* <Route path="/" element={<Dropdown data={dropdown} />}></Route> */}
       </Routes>
     </div>
