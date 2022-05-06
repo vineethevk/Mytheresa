@@ -3,6 +3,7 @@ import "./WomenPage.css"
 // import "../../components/Navbar/BottomNav.css"
 import { BottomNav } from "../../components/Navbar/BottomNav"
 import { Women } from "../../components/Navbar/NavData"
+import { Link } from "react-router-dom";
 
 export const WomenPage = () => {
 
@@ -11,13 +12,15 @@ export const WomenPage = () => {
     <BottomNav data={data} />
     <div className="container">
       <div className="main_img">
-        <img src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW16/NensiDojaka_Big_desktop_2x_1_20220414175823.jpg?imwidth=1180&imdensity=1" alt="women-img" />
+        <Link to="/womenproducts">
+          <img src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW16/NensiDojaka_Big_desktop_2x_1_20220414175823.jpg?imwidth=1180&imdensity=1" alt="women-img" />
+        </Link>
       </div>
       <div className="banner">
         <h4 className="ha4">DON'T MISS OUT</h4>
         <h1 className="ha1">New Arrivals</h1>
         <h5 className="ha5">Gianvito Rossi, Lee Mathews, Vince, Costarellos...</h5>
-        <button className="btn-shop">SHOP NOW</button>
+        <Link to="/womenproducts"><button className="btn-shop">SHOP NOW</button></Link>
       </div>
       <div className="start">
         <div className="left">
@@ -27,7 +30,8 @@ export const WomenPage = () => {
           <br />
           <img src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW17/Pucci_Eyewear_Act_Tall1_x2_20220428093236.jpg?imwidth=600&imdensity=1" alt="" />
           <br />
-          <button className="btn-shop">SHOP NOW</button>
+          <Link to="/womenproducts">
+            <button className="btn-shop">SHOP NOW</button></Link>
         </div>
         <div className="right">
           <h4 className="ha4">NEW HEIGHTS</h4>
@@ -36,7 +40,8 @@ export const WomenPage = () => {
           <br />
           <img src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW17/CW17_ActboxSmall_2x__20220422154021.jpg?imwidth=600&imdensity=1" alt="" />
           <br />
-          <button className="btn-shop">SHOP NOW</button>
+          <Link to="/womenproducts">
+            <button className="btn-shop">SHOP NOW</button></Link>
           <hr></hr>
           <h4 className="ha4">BLUE SKY THINKING</h4>
           <h1 className="ha1">New dresses in fresh colorways</h1>
@@ -44,7 +49,8 @@ export const WomenPage = () => {
           <br />
           <img src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW17/CW17_ActboxSmall_2x_2_20220422154021.jpg?imwidth=600&imdensity=1" alt="" />
           <br />
-          <button className="btn-shop">SHOP NOW</button>
+          <Link to="/womenproducts">
+            <button className="btn-shop">SHOP NOW</button></Link>
         </div>
       </div>
       <hr></hr>
@@ -56,7 +62,8 @@ export const WomenPage = () => {
           <br />
           <img src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW17/CW17_ActboxSmall_2x_3_20220422154023.jpg?imwidth=600&imdensity=1" alt="" />
           <br />
-          <button className="btn-shop">SHOP NOW</button>
+          <Link to="/womenproducts">
+            <button className="btn-shop">SHOP NOW</button></Link>
           <hr></hr>
           <h4 className="ha4">READY FOR WARM WEATHER?</h4>
           <h1 className="ha1">Sandals and slides to buy <br /> now
@@ -65,7 +72,8 @@ export const WomenPage = () => {
           <br />
           <img src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW17/CW17_ActboxSmall_2x_4_20220422154022.jpg?imwidth=600&imdensity=1" alt="" />
           <br />
-          <button className="btn-shop">SHOP NOW</button>
+          <Link to="/womenproducts">
+            <button className="btn-shop">SHOP NOW</button></Link>
         </div>
         <div className="right">
           <h4 className="ha4" >NOW AT MYTHERESA</h4>
@@ -74,7 +82,8 @@ export const WomenPage = () => {
           <br />
           <img src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW17/CW17_ActboxTall_2x_20220422154035.jpg?imwidth=600&imdensity=1" alt="" />
           <br />
-          <button className="btn-shop">SHOP NOW</button>
+          <Link to="/womenproducts">
+            <button className="btn-shop">SHOP NOW</button></Link>
         </div>
 
       </div>
@@ -102,7 +111,8 @@ export const WomenPage = () => {
           </div>
 
         </div>
-        <button className="btn-shop">SHOP NOW</button>
+        <Link to="/womenproducts">
+          <button className="btn-shop">SHOP NOW</button></Link>
         <hr></hr>
       </div>
       <div className="texts-div">
