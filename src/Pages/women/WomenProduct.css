@@ -22,11 +22,11 @@
      font-weight: bold;
      
   }
-  .women_card{
+  /* .women_card{ */
   
    /* border: 1px solid rgb(74, 70, 157); */
 
-  }
+  /* } */
   .women_image{
     /* border: 1px solid rgb(140, 7, 7); */
     width: 250px;
@@ -61,6 +61,6 @@
     width: 20%;
     display: flex;
   }
-  .price-filter{
+  /* .price-filter{
 
-  }
+  } */

@@ -1,28 +1,30 @@
-*{
+/* *{
     font-family: Futura-Medium, Century Gothic, Gill Sans, Helvetica, Arial,
       sans-serif;
       cursor: pointer;
-  }
-  /* .container{ */
-      
-  /* } */
-  .ha4 {
+  } */
+/* .container{ */
+
+/* } */
+.ha4 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
-  }
-  .banner{
-     cursor: pointer;
-     background-color: #F6F6F6;
-     padding: 30px 30px;
-     border: 1px solid  rgb(192, 188, 188);
-     width: 1300px;
-     margin: auto;
-     height: 220px;
-     margin-top: 20px;
-  }
- .ha1{
-   
+}
+
+.banner {
+    cursor: pointer;
+    background-color: #F6F6F6;
+    padding: 30px 30px;
+    border: 1px solid rgb(192, 188, 188);
+    width: 1300px;
+    margin: auto;
+    height: 220px;
+    margin-top: 20px;
+}
+
+.ha1 {
+
     font-size: 38px;
     margin-bottom: 0.67em;
     margin-bottom: 0.1em;
@@ -36,21 +38,22 @@
     font-weight: 400;
 }
 
-  
-.ha5{
+
+.ha5 {
     line-height: 22px;
     padding: 0 80px;
-   
+
     font-weight: 400;
     text-transform: none;
     line-height: 26px;
     padding: 0 35px;
-   
+
     letter-spacing: .5px;
     text-transform: uppercase;
     color: #000;
 }
-h3{
+
+h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 400;
@@ -58,7 +61,7 @@ h3{
     color: #000;
 }
 
-.btn-shop{
+.btn-shop {
     margin-top: 30px;
     width: auto;
     color: #fff;
@@ -74,64 +77,72 @@ h3{
     border: none;
     text-align: center;
     cursor: pointer;
-    transition: background-color .4s ease-out,border-color .4s ease-out,color .4s ease-out;
+    transition: background-color .4s ease-out, border-color .4s ease-out, color .4s ease-out;
 }
-.start{
-    display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-.left{
-    width: 45%;
-}
-hr{
-    margin-top: 40px;
-    width: 84%;
-    color: #CECECE;
-}
-.second{
+
+.start {
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
 
-.third-img{
+.left {
+    width: 45%;
+}
+
+hr {
+    margin-top: 40px;
+    width: 84%;
+    color: #CECECE;
+}
+
+.second {
     display: flex;
-    width:80%;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.third-img {
+    display: flex;
+    width: 80%;
     box-sizing: inherit;
     margin: auto;
 }
-.img1{
+
+.img1 {
     width: 85%;
     height: 85%;
     padding: 10px;
-   
+
 }
-.btn-shop{
-margin-top: 50px;
-color: #fff;
-background-color: #000;
-border-color: #000;
-display: inline-block;
-text-align: center;
-font-size: 12px;
-letter-spacing: 1.2px;
-line-height: 17px;
-text-transform: uppercase;
-padding: 10px 20px;
-border: none;
-text-align: center;
-cursor: pointer;
-transition: background-color .4s ease-out,border-color .4s ease-out,color .4s ease-out;
+
+.btn-shop {
+    margin-top: 50px;
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    line-height: 17px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .4s ease-out, border-color .4s ease-out, color .4s ease-out;
 }
+
 .p-tag {
     font-size: 13px;
     line-height: 16px;
     letter-spacing: .8px;
     color: #000;
-    
+
 }
-a{
+
+.container a {
     font-size: 13px;
     color: #000;
     text-decoration: none;
@@ -142,7 +153,8 @@ a{
     line-height: 16px;
     letter-spacing: .8px;
 }
-.col-1{
+
+.col-1 {
     padding: 20px 0;
     width: 49.1525423729%;
     float: left;
@@ -152,14 +164,15 @@ a{
     letter-spacing: .8px;
     color: #000;
     margin-left: 20px;
-    
+
 }
+
 /* .col-1 .col-set{
     width: 49.1525423729%;
     float: left;
     margin-right: 1.6949152542%;
 } */
-ul{
+.container ul {
     list-style: disc;
     font-size: 12px;
     line-height: 16px;
@@ -175,7 +188,7 @@ ul{
     margin-left: 17px;
 }
 
-.col-set{
+.col-set {
     display: flex;
 }
 
@@ -184,23 +197,26 @@ ul{
     width: 80%;
     margin: auto;
     /* border: 1px solid red; */
-  }
-  .text_below > h2 {
+}
+
+.text_below>h2 {
     text-align: center;
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 0.8px;
     color: #000;
-  }
-  .text_below > p {
+}
+
+.text_below>p {
     letter-spacing: 0.8px;
     color: #000;
     font-size: 12px;
     line-height: 16px;
     text-align: left;
-  }
-  .exp_quality {
+}
+
+.exp_quality {
     display: flex;
     text-align: left;
     letter-spacing: 0.8px;
@@ -208,4 +224,4 @@ ul{
     font-size: 12px;
     line-height: 16px;
     text-align: left;
-  }
+}
