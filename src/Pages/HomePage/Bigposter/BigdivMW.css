@@ -1,4 +1,4 @@
-.myimg{
+.myimg {
     width: 84%;
     height: 530px;
     margin: 0% 8% 3% 8%;
@@ -7,20 +7,23 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     /* border: 1px solid green; */
-} 
-
-@media screen {
-    
 }
-.mwDiv{
+
+@media screen {}
+
+.mwDiv {
     /* margin: 21%; */
     display: flex;
     color: white;
     font-size: 54px;
     font-weight: 380;
     align-items: center;
-    
+
     justify-content: center;
     /* border: 3px solid yellow; */
-    width:100%
+    width: 100%
+}
+
+.mwDiv a {
+    color: white;
 }
