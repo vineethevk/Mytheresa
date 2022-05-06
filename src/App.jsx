@@ -10,7 +10,6 @@ function App() {
   return (
     <div>
       <Navbar />
-      <BottomNav data={Men} />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/login" element={<LoginAndRegister />}></Route>
