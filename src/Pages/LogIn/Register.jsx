@@ -18,9 +18,9 @@ export const Register = () => {
         <form>
             <p className="Heading">CREATE AN ACCOUNT</p>
             <p>Please enter the following information to create your account.</p>
-            <input type={"radio"} value={"Ms."} /><label>Ms.</label>
-            <input type={"radio"} value={"Mrs."} /><label>Mrs.</label>
-            <input type={"radio"} value={"Mr."} /><label>Mr.</label><br />
+            <input type={"radio"} value={"Ms."} name="gender" /><label>Ms.</label>
+            <input type={"radio"} value={"Mrs."} name="gender" /><label>Mrs.</label>
+            <input type={"radio"} value={"Mr."} name="gender" /><label>Mr.</label><br />
             <select className="Input">
                 <option>academic title</option>
                 <option>Dr.</option>
