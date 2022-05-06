@@ -1,7 +1,7 @@
 import { useEffect ,useState } from "react";
 import axios from "axios";
 import{Link} from "react-router-dom"
-import "../components/WomenProduct.css"
+import "./WomenProduct.css"
 
 export const WomensList = () => {
 
