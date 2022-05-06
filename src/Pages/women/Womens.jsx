@@ -7,7 +7,7 @@ export const Womens=()=>{
 return(
     <div className="container">
 <div className="main_img">
-    <img src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW16/NensiDojaka_Big_desktop_2x_1_20220414175823.jpg?imwidth=1180&imdensity=1" alt="women-img" />
+    <img  src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW16/NensiDojaka_Big_desktop_2x_1_20220414175823.jpg?imwidth=1180&imdensity=1" alt="women-img" />
 </div>
 <div className="banner">
   <h4 className="ha4">DON'T MISS OUT</h4>

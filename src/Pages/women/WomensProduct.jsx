@@ -8,21 +8,36 @@ export const WomensList = () => {
   const [data,setdata] = useState([])
 
   useEffect(()=>{
-    axios.get("http://localhost:8080/womensdata").then(({data})=>{
+    axios.get("http://localhost:8080/womensdata1").then(({data})=>{
        setdata(data)
     })
  },[])
  //console.log(data)
+ const handlechange=(e)=>{
+   if(e.target.value=="low-to-high"){
+    setdata(data.sort((a,b)=>(a.price-b.price)))
+   }
+   
+ }
     return (
+
     <div className="container-main">
+      
       <div className="left-side">
+      <div className="price-filter">
+        <select onChange={handlechange}> 
+        <option>Sort-By</option>
+          <option value={"low-to-high"}>Price-Low To High</option>
+          <option value={"high-to-low"}>Price-High To Low</option>
+        </select>
+      </div>
       <div class="Showall">
         
         <p>Show All</p>
       </div>
    
     <hr />
-    <div id="kid_main_product">
+    <div id="women_main_product">
       <div class="filter">
         <div>
           <p >BOYS</p>
@@ -117,14 +132,15 @@ export const WomensList = () => {
       </div>
       </div>
       <div className="list_container">
-        {data.map((e,i)=>{
+        {data.map((e)=>{
           return (
-          <Link to={`/womensdata/${e.id}`}>
-          <div className="women_card" key={i}>
-          <img className="women_image" src={e.image_url}/>
-          <span className="women_name">{e.name}</span>
-          <span className="women_title">€{e.price}</span>
-         
+          <Link to={`/womensdata1/${e.id}`}>
+          <div className="women_card">
+          <img className="women_image" src={e.images.img1}/>
+          <p className="women_brandName">{e.brandName}</p>
+          <p className="women_name">{e.name}</p>
+         <h3 className="women_price">€{e.price}</h3>
+          
         </div></Link>
           )
         })}
