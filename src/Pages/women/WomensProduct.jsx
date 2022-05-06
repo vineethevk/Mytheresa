@@ -17,7 +17,7 @@ export const WomensList = () => {
     <div className="container-main">
       <div className="left-side">
       <div class="Showall">
-        <input type="checkbox" name="" id="" />
+        
         <p>Show All</p>
       </div>
    
@@ -123,7 +123,7 @@ export const WomensList = () => {
           <div className="women_card" key={i}>
           <img className="women_image" src={e.image_url}/>
           <span className="women_name">{e.name}</span>
-          <span className="women_title">{e.price}</span>
+          <span className="women_title">€{e.price}</span>
          
         </div></Link>
           )
