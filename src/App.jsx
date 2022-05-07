@@ -1,3 +1,4 @@
+import { Footer } from "./components/Footer/footer"
 import { Route, Routes } from "react-router-dom"
 import { Navbar } from "./components/Navbar/Navbar"
 import { Home } from "./Pages/HomePage/Home"
@@ -17,6 +18,8 @@ function App() {
         <Route path="/men" element={<Home />}></Route>
         <Route path="/login" element={<LoginAndRegister />}></Route>
       </Routes>
+
+      <Footer />
     </div>
   )
 }
