@@ -1,0 +1,37 @@
+.TopNav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.TopNav ul {
+    list-style: none;
+    overflow: auto;
+}
+
+.TopNav ul li {
+    float: left;
+    margin: 1px 8px;
+}
+
+
+.TopLeft {
+    /* border: solid 1px red; */
+    margin-top: 0px;
+    width: 20%;
+}
+
+.TopRight {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    /* margin-top: 20px; */
+}
+
+.TopRight ul li {
+    margin-left: 30px;
+}
+
+.TopLeft ul {
+    margin: 5px;
+}
