@@ -1,4 +1,3 @@
-import React from "react"
 import { Footer } from "./components/Footer/footer"
 import { Route, Routes } from "react-router-dom"
 import { Navbar } from "./components/Navbar/Navbar"
