@@ -1,0 +1,59 @@
+.Dropdown {
+    position: absolute;
+    visibility: hidden;
+    /* top: 175px; */
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    border: solid 1px #EFEFEF;
+}
+
+.Dropdown a {
+    text-decoration: none;
+    color: #666;
+}
+
+.Title {
+    background-color: #EFEFEF;
+    display: flex;
+    padding-left: 20px;
+    height: 30px;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+.Title div {
+    width: 20%;
+}
+
+.option {
+    display: flex;
+    padding-left: 20px;
+}
+
+.option div {
+    width: 20%;
+}
+
+#Image {
+    /* background-image: url(https://img.mytheresa.com/media/static/raw/cms/l/MW_FLYOUT_CW17_2022/NA_FLYOUT-_19__20220428121816.jpg); */
+    cursor: pointer;
+    width: 40%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+#ImageText {
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 300px;
+}
+
+#ImageText button {
+    height: 30px;
+    width: 100px;
+    border: none;
+
+}
