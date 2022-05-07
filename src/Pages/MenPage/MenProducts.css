@@ -1,9 +1,12 @@
 * {
   font-family: Futura-Medium, Century Gothic, Gill Sans, Helvetica, Arial,
     sans-serif;
+  /* cursor: pointer; */
 }
 
 .container-main {
+  /* width: 1100px; */
+  /* border: 1px solid rgb(10, 230, 72); */
   width: 85%;
   display: flex;
   margin: auto;
@@ -11,6 +14,7 @@
 
 .left-side {
   width: 30%;
+  /* border: 1px solid rgb(216, 21, 125); */
 }
 
 .list_container {
@@ -22,14 +26,23 @@
   font-weight: bold;
 
 }
+
+/* .women_card {
+  /* width: auto; */
+/* border: 1px solid rgb(74, 70, 157); */
+
+/* } */
+
 .women_image {
+  /* border: 1px solid rgb(140, 7, 7); */
   width: 250px;
-  height: 28.5vw;
+  height: 300px;
   transition: 0.5s all ease-in-out;
 }
 
 .women_image:hover {
   height: 320px;
+  /* width: 270px; */
   transform: scale(1.1);
 
 }
@@ -50,6 +63,7 @@
 
 #women_main_product>.filter>div {
   display: flex;
+  /* width: 30%; */
   margin-left: 20px;
 }
 
@@ -61,3 +75,7 @@
   width: 20%;
   display: flex;
 }
+
+/* .price-filter{
+
+  } */
