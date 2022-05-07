@@ -1,0 +1,83 @@
+.BottomNav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.MainBottomNav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #ffffffe1;
+}
+
+.Gap {
+    height: 50px;
+    border-top: solid 1px #e4e4e4;
+}
+
+
+.A:hover .Dropdown {
+    visibility: visible;
+    /* z-index: 1; */
+    left: 40px;
+    margin-top: 15px;
+    font-size: 14px;
+
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+
+.BottomNav ul {
+    list-style: none;
+    overflow: auto;
+}
+
+.BottomNav ul li {
+    float: left;
+    margin-right: 18px;
+}
+
+
+.Searchbar {
+    margin-top: 10px;
+
+}
+
+.Searchbar input {
+    height: 28px;
+    width: 200px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+}
+
+.Searchbar div {
+    border: solid 1px grey;
+}
+
+.Searchbar button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.Searchbar div button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    padding-top: 7px;
+}
+
+.BottomRight {
+    margin-right: 30px;
+}
