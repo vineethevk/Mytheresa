@@ -1,0 +1,26 @@
+
+
+/* ---------- */
+.cont{
+    display: block;
+}
+.mimage{
+    width: 80%;
+    height: 300px;
+    margin:auto;
+}
+.mimage>img{
+    width:100%;
+    
+}
+#mimg{
+    height: 100%;
+    margin-top: 5vw;
+}
+.masterslide{
+    margin-top: 15vw;
+}
+
+.headingof{
+    margin-bottom: 5px;
+}
