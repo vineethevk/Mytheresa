@@ -1,3 +1,4 @@
+import React from "react"
 import { Footer } from "./components/Footer/footer"
 import { Route, Routes } from "react-router-dom"
 import { Navbar } from "./components/Navbar/Navbar"
@@ -5,6 +6,7 @@ import { Home } from "./Pages/HomePage/Home"
 import { LoginAndRegister } from "./Pages/LogIn/LoginAndRegister"
 import { WomenPage } from "./Pages/women/WomenPage"
 import { WomenProducts } from "./Pages/women/WomenProducts"
+// import { MenPage } from "./Pages/MenPage/MenPage"
 
 function App() {
 
