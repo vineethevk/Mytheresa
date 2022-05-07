@@ -1,0 +1,133 @@
+.masterslide {
+  border: 3px solid rgba(255, 255, 255, 0.005);
+  padding-bottom: 30px;
+
+}
+
+.myApp {
+  font-family: sans-serif;
+  padding: 10px 30px;
+  /* border: 2px solid rgb(0, 0, 0); */
+  width: 84%;
+  height: 400px;
+  margin: 8%;
+  padding: 0%;
+}
+
+
+.myApp>div {
+  background-color: #5c2e91;
+  background-color: #fff;
+
+  text-align: center;
+}
+
+
+.arrow {
+  position: absolute;
+  color: #000000;
+  font-size: 2.5em;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.arrow:hover {
+  position: absolute;
+  background-color: #f6efef;
+  font-size: 2.5em;
+
+
+  cursor: pointer;
+}
+
+.nextArrow {
+  top: 40%;
+  right: -40px;
+  font-weight: 100;
+
+}
+
+.prevArrow {
+  top: 40%;
+  left: -40px;
+  font-weight: 100;
+}
+
+.headingof {
+  text-align: center;
+  font-size: large;
+  margin-top: -100px;
+  margin-bottom: 50px;
+
+  -webkit-text-size-adjust: 100%;
+  letter-spacing: .8px;
+  box-sizing: inherit;
+
+  font-weight: 400;
+  text-align: center;
+  font-family: Futura-Medium, Century Gothic, Gill Sans, Helvetica, Arial, sans-serif;
+  line-height: 1.3em;
+  font-size: 32px;
+
+  padding-top: 20px;
+  color: black;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.viewallof {
+  background-color: #000000;
+  color: white;
+  width: 8%;
+  font-size: 15px;
+  text-align: center;
+  margin: 20px 46% 0px 46%;
+  padding: 5px;
+}
+
+
+.my1slides {
+  /* border: 2px solid rgb(13, 106, 211); */
+  height: 380px;
+
+
+}
+
+.proimg {
+  width: 96%;
+  margin: 1% 2%;
+  /* border: 2px dashed red; */
+}
+
+.price {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  font-size: 14px;
+  color: #000;
+  list-style: none;
+  user-select: none;
+  visibility: visible;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  font-weight: 700;
+  letter-spacing: .3px;
+  box-sizing: inherit;
+
+}
+
+.ph1 {
+  -webkit-text-size-adjust: 100%;
+  list-style: none;
+  user-select: none;
+  visibility: visible;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: inherit;
+  font-family: Futura-Medium, Century Gothic, Gill Sans, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 14px;
+  letter-spacing: .8px;
+
+}

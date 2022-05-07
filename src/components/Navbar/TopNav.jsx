@@ -6,8 +6,8 @@ export const TopNav = () => {
         <div className='TopNav'>
             <div className="TopLeft">
                 <ul>
-                    <li><Link to="/">WOMEN</Link></li>
-                    <li><Link to="/">MEN</Link></li>
+                    <li><Link to="/women">WOMEN</Link></li>
+                    <li><Link to="/men">MEN</Link></li>
                     <li><Link to="/">KIDS</Link></li>
                 </ul>
             </div>
@@ -15,7 +15,7 @@ export const TopNav = () => {
                 <ul>
                     <li><Link to="/">Signup for Newsletter</Link></li>
                     <li><Link to="/">My account</Link></li>
-                    <li><Link to="/">My wishlist {<AiOutlineHeart/>}</Link></li>
+                    <li><Link to="/">My wishlist {<AiOutlineHeart />}</Link></li>
                     <li><Link to="/">International | English</Link></li>
                 </ul>
             </div>
