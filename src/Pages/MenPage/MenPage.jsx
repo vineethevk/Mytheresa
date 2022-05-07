@@ -3,13 +3,13 @@ import "./MenPage.css"
 
 import "../../components/Navbar/BottomNav.css"
 import { BottomNav } from "../../components/Navbar/BottomNav"
-import { Women } from "../../components/Navbar/NavData"
+import { Men } from "../../components/Navbar/NavData"
 import { MymenSlider } from "./Men"
 import { MywomenSlider } from "../HomePage/WnewArrival/Women"
 
 export const MenPage = () => {
 
-  const data = Women;
+  const data = Men;
   return (<>
     <BottomNav data={data} />
     <div className="container">
