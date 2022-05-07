@@ -1,60 +1,64 @@
+#main {
+  display: flex;
+  border: 1px solid;
+  /* height: 400px; */
+  width: 90%;
+  margin: auto;
+  /* margin: 20%  */
+  /* margin-left: 15%;
+  margin-right: 15% */
+}
 
-     #main{
-        display: flex;
-        border: 1px solid ;
-        height: 400px;
-        /* margin: 20%  */
-        margin-left:15%;
-        margin-right: 15%
-      }
- 
-        .col{
-         height: 100px;
-             /* border: 5 px solid red; */
-             background-color: aquamarine;
-            border: 1px solid ;
-         }
- 
-         /* #main> div{
+.col {
+  height: 100px;
+  /* border: 5 px solid red; */
+  background-color: aquamarine;
+  border: 1px solid;
+}
+
+/* #main> div{
            width: 40%;
          } */
- 
-         .col1{
-           border: 1px solid red;
-           width: 25%;
-           margin-left: -40px;
-         }
-         
-         .col2{
-           border: 1px solid red;
-           width: 20%;
-         }
-         
-         .col3{
-           border: 1px solid red;
-           width: 20%;
-         }
-         
-         .col4{
-           border: 1px solid green;
-           width: 35%;
-         }
-         .li{
-           margin-top: -20px;
-         }
-       .li2{
-         margin-top: -10px;
-       }
- 
-       .btn{
-         padding-left: 20px;
-         padding-right: 20px;
-       }
- 
-       .media{
-         border: 1px solid red ;
-         display: flex;
-       }
-       .logo{
-         height: 30px;
-       }
+
+.col1 {
+  /* border: 1px solid red; */
+  width: 25%;
+  margin-left: -40px;
+}
+
+.col2 {
+  /* border: 1px solid red; */
+  width: 20%;
+}
+
+.col3 {
+  /* border: 1px solid red; */
+  width: 20%;
+}
+
+.col4 {
+  /* border: 1px solid green; */
+  width: 35%;
+}
+
+.li {
+  margin-top: -20px;
+}
+
+.li2 {
+  margin-top: -10px;
+}
+
+.btn {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.media {
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+.logo {
+  height: 30px;
+}
