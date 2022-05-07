@@ -5,7 +5,6 @@ import { Home } from "./Pages/HomePage/Home"
 import { LoginAndRegister } from "./Pages/LogIn/LoginAndRegister"
 import { WomenPage } from "./Pages/women/WomenPage"
 import { WomenProducts } from "./Pages/women/WomenProducts"
-// import { MenPage } from "./Pages/MenPage/MenPage"
 
 function App() {
 
