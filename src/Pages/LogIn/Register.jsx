@@ -15,8 +15,9 @@ export const Register = () => {
         setFormdata({ ...formdata, [e.target.name]: e.target.value })
     }
     const handleSubmit = (e) => {
-        e.preventDefault();
-        navigate("/")
+        // e.preventDefault();
+        alert("You have registered successfully")
+        // navigate("/login")
 
 
     }

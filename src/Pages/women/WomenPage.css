@@ -136,6 +136,10 @@ hr {
     transition: background-color .4s ease-out, border-color .4s ease-out, color .4s ease-out;
 }
 
+.last-btn {
+    margin-left: 46%;
+}
+
 .p-tag {
     font-size: 13px;
     line-height: 16px;
