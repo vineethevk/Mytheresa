@@ -1,21 +1,21 @@
-import image1 from "./assets/carouselImage1.jpg";
-import image2 from "./assets/carouselImage2.jpg";
-import image3 from "./assets/carouselImage3.jpg";
-import image4 from "./assets/carouselImage4.jpg";
-import image5 from "./assets/carouselImage5.jpg";
-import image6 from "./assets/carouselImage6.jpg";
+import image1 from "../components/assets/carouselImage1.jpg"
+import image2 from "../components/assets/carouselImage2.jpg";
+import image3 from "../components/assets/carouselImage3.jpg";
+import image4 from "../components/assets/carouselImage4.jpg";
+import image5 from "../components/assets/carouselImage5.jpg";
+import image6 from "../components/assets/carouselImage6.jpg";
 
-import multicar1 from "./assets/multicar1.jpeg";
-import multicar2 from "./assets/multicar2.jpeg";
-import multicar3 from "./assets/multicar3.jpeg";
-import multicar4 from "./assets/multicar4.jpeg";
-import multicar5 from "./assets/multicar5.jpeg";
-import multicar6 from "./assets/multicar6.jpeg";
-import multicar7 from "./assets/multicar7.jpeg";
-import multicar8 from "./assets/multicar8.jpeg";
-import multicar9 from "./assets/multicar9.jpeg";
-import multicar10 from "./assets/multicar10.jpeg";
-import multicar11 from "./assets/multicar11.jpeg";
+import multicar1 from "../components/assets/multicar1.jpeg";
+import multicar2 from "../components/assets/multicar2.jpeg";
+import multicar3 from "../components/assets/multicar3.jpeg";
+import multicar4 from "../components/assets/multicar4.jpeg";
+import multicar5 from "../components/assets/multicar5.jpeg";
+import multicar6 from "../components/assets/multicar6.jpeg";
+import multicar7 from "../components/assets/multicar7.jpeg";
+import multicar8 from "../components/assets/multicar8.jpeg";
+import multicar9 from "../components/assets/multicar9.jpeg";
+import multicar10 from "../components/assets/multicar10.jpeg";
+import multicar11 from "../components/assets/multicar11.jpeg";
 
 export const data = [image1, image2, image3, image4, image5, image6];
 export const multiData = [

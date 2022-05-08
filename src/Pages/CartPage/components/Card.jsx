@@ -1,14 +1,14 @@
 import React from 'react'
 import "./Card.css"
 
-import Stack from '@mui/material/Stack';
+// import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
 import OutlinedInput from '@mui/material/OutlinedInput';
-import MenuItem from '@mui/material/MenuItem';
+// import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-import Carousel from '../../Carousel';
+// import Select from '@mui/material/Select';
+import Carousel from '../Data/Carousel'
 import BootstrapMultiCarousel from './BootstrapMulti';
 const Card = () => {
 
