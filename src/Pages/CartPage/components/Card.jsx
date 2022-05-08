@@ -1,7 +1,5 @@
 import React from 'react'
 import "./Card.css"
-
-// import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
 import OutlinedInput from '@mui/material/OutlinedInput';
@@ -9,8 +7,39 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Carousel from '../Data/Carousel'
-import BootstrapMultiCarousel from './BootstrapMulti';
-const Card = () => {
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import { useParams } from 'react-router';
+
+
+
+const Card = ({ link }) => {
+
+  const { id } = useParams()
+  // console.log(id);
+
+
+  const [product, setProduct] = useState({
+    images: []
+  });
+  const [image, setImage] = useState([]);
+
+  useEffect(() => {
+    axios.get(`http://localhost:8080/${link}/${id}`).then(({ data }) => {
+      setProduct(data)
+    })
+
+  }, [])
+
+  useEffect(() => {
+    for (const [key, value] of Object.entries(product.images)) {
+      setImage((p) => [...p, value])
+    }
+    return (() => {
+      setImage([]);
+    })
+
+  }, [product])
 
   const ITEM_HEIGHT = 48;
   const ITEM_PADDING_TOP = 8;
@@ -69,7 +98,7 @@ const Card = () => {
       <div className="main-box" >
 
         <div className=' main-box-left'>
-          <Carousel />
+          <Carousel image={image} />
         </div>
         <div className='main-box-right'>
           <div className='right-box-content' style={{ justifyContent: 'flex-start' }}>
