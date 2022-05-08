@@ -29,4 +29,21 @@
     font-size: 16px;
     margin-top: 20px;
     border: solid 1px aquamarine;
+    outline: none;
+}
+
+.LoginSumbit {
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 40px;
+}
+
+.Registerbtn {
+    background-color: aquamarine;
+    color: black;
+    font-size: 16px;
+    height: 40px;
+    width: 150px;
+    border: none;
 }
