@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./BootstrapMulti.css";
 // import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import { FaHeart, FaRegHeart ,FaAngleRight,FaAngleLeft} from 'react-icons/fa';
-import { data, multiData } from "../../data";
+import { data, multiData } from "../Data/data"
 // import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 // import { Rating } from "@material-ui/lab";
 
