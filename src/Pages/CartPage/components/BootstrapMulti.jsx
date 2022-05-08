@@ -3,8 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./BootstrapMulti.css";
 // import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
-import { FaHeart, FaRegHeart ,FaAngleRight,FaAngleLeft} from 'react-icons/fa';
-import { data, multiData } from "../../data";
+import { FaHeart, FaRegHeart, FaAngleRight, FaAngleLeft } from 'react-icons/fa';
+import { data, multiData } from "../Data/data";
 // import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 // import { Rating } from "@material-ui/lab";
 
@@ -14,7 +14,7 @@ const PreviousBtn = (props) => {
   return (
     <div className={className} onClick={onClick}>
       {/* <ArrowBackIos style={{ color: "white", fontSize: "30px" }} /> */}
-      <FaAngleLeft style={{color: 'black', fontSize: '50px'}}/>
+      <FaAngleLeft style={{ color: 'black', fontSize: '50px' }} />
     </div>
   );
 };
@@ -23,7 +23,7 @@ const NextBtn = (props) => {
   return (
     <div className={className} onClick={onClick}>
       {/* <ArrowForwardIos style={{ color: "white", fontSize: "30px" }} /> */}
-      <FaAngleRight style={{color: 'black', fontSize: '50px'}}/>
+      <FaAngleRight style={{ color: 'black', fontSize: '50px' }} />
     </div>
   );
 };
@@ -43,7 +43,7 @@ const BootstrapMultiCarousel = () => {
           dots
         >
           {multiData.map((item) => (
-            <Card  className="Card" item={item}   />
+            <Card className="Card" item={item} />
           ))}
         </Slider>
       </div>
@@ -59,7 +59,7 @@ const Card = ({ item }) => {
         margin: 10,
         // padding: "0 10px",
         width: 280,
-        height:350,
+        height: 350,
         boxShadow: "0 1px 6px 0 rgb(32 33 36 / 28%)",
         borderRadius: 5,
       }}
@@ -86,7 +86,7 @@ const Card = ({ item }) => {
           fontWeight: 400,
         }}
       >
-        Top Trending 
+        Top Trending
       </p>
       {/* <Rating precision={0.5} size="small" /> */}
       <p>

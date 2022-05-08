@@ -5,9 +5,9 @@ import "./Card.css"
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
 import OutlinedInput from '@mui/material/OutlinedInput';
-// import MenuItem from '@mui/material/MenuItem';
+import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-// import Select from '@mui/material/Select';
+import Select from '@mui/material/Select';
 import Carousel from '../Data/Carousel'
 import BootstrapMultiCarousel from './BootstrapMulti';
 const Card = () => {
@@ -69,27 +69,15 @@ const Card = () => {
       <div className="main-box" >
 
         <div className=' main-box-left'>
-
-
-
-
           <Carousel />
         </div>
-
-
         <div className='main-box-right'>
-
           <div className='right-box-content' style={{ justifyContent: 'flex-start' }}>
             <h3>AURALEE</h3>
             <h5>Wool-blend coat</h5>
             <h5>€ 1,475</h5>
             <p>VAT exception. VAT not included. <br />
               item no. P00648789</p>
-
-
-
-
-
             <div>
               <FormControl sx={{ m: 1, width: 300, mt: 4 }}>
                 <Select
@@ -130,15 +118,7 @@ const Card = () => {
           </div>
         </div>
       </div>
-
-
-
-
-
-
     </>
-
-
   )
 }
 

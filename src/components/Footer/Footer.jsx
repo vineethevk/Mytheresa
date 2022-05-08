@@ -47,7 +47,7 @@ export const Footer = () => {
             <div className="col4" >
                 <p className="heading"> GET TREND UPDATES, STYLE TIPS AND MORE </p>
                 <input type="email" placeholder="your email address here.... " />
-                <button className="btn" > SIGN UP </button>
+                <button className="Footerbtn" > SIGN UP </button>
                 <p>Wish List </p>
                 <p className="li2 text" >Receive personal notifications </p>
                 <p>Follow us on </p>
