@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 // import { chevron-right } from "react-icons/fa";
 import { FaHeart, FaRegHeart ,FaAngleRight,FaAngleLeft} from 'react-icons/fa';
 import "./carousel.css";
-import { data } from "./data";
+import { data } from "../Pages/data"
 // import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 
 const PreviousBtn = (props) => {
