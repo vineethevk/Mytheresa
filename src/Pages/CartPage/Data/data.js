@@ -1,4 +1,4 @@
-import image1 from "../components/assets/carouselImage1.jpg"
+import image1 from "../components/assets/carouselImage1.jpg";
 import image2 from "../components/assets/carouselImage2.jpg";
 import image3 from "../components/assets/carouselImage3.jpg";
 import image4 from "../components/assets/carouselImage4.jpg";
