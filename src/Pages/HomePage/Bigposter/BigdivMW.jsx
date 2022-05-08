@@ -7,7 +7,7 @@ export const BigdivMW = () => {
 
         <div className="myimg">
 
-            <div className="mwDiv"><Link to="women">Womans</Link></div>
+            <div className="mwDiv"><Link to="women">Womens</Link></div>
             <div className="mwDiv"><Link to="men">Men</Link></div>
         </div>
 
