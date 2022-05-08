@@ -7,7 +7,10 @@ import { WomenPage } from "./Pages/women/WomenPage"
 import { WomenProducts } from "./Pages/women/WomenProducts"
 import { MenProducts } from "./Pages/MenPage/MenProducts"
 import { MenPage } from "./Pages/MenPage/MenPage"
+
+import Card from "./Pages/CartPage/components/Card"
 import './App.css'
+
 
 function App() {
 
@@ -21,6 +24,7 @@ function App() {
         <Route path="/men" element={<MenPage />}></Route>
         <Route path="/menproducts" element={<MenProducts />}></Route>
         <Route path="/login" element={<LoginAndRegister />}></Route>
+        <Route path="/test" element={<Card />}></Route>
       </Routes>
       <Footer />
     </div>
