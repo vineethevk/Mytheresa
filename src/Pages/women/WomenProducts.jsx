@@ -12,7 +12,7 @@ export const WomenProducts = () => {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
-    axios.get("http://localhost:8080/womensdata").then(({ data }) => {
+    axios.get("http://54.167.67.179:8080/womensdata1").then(({ data }) => {
       setProducts(data)
     })
   }, [])
