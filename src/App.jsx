@@ -7,7 +7,10 @@ import { WomenPage } from "./Pages/women/WomenPage"
 import { WomenProducts } from "./Pages/women/WomenProducts"
 import { MenProducts } from "./Pages/MenPage/MenProducts"
 import { MenPage } from "./Pages/MenPage/MenPage"
+
+import Card from "./Pages/CartPage/components/Card"
 import './App.css'
+
 
 function App() {
 
