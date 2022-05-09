@@ -9,6 +9,7 @@ import { MenProducts } from "./Pages/MenPage/MenProducts"
 import { MenPage } from "./Pages/MenPage/MenPage"
 import Card from "./Pages/CartPage/components/Card"
 import './App.css'
+import MainCart from "./Pages/cart/MainCart"
 
 
 function App() {
@@ -25,9 +26,10 @@ function App() {
         <Route path="/login" element={<LoginAndRegister />}></Route>
         <Route path="/product/women/:id" element={<Card link={"womensdata"} />}></Route>
         <Route path="/product/men/:id" element={<Card link={"mendata"} />}></Route>
+        <Route path="/cart" element={<MainCart />}></Route>
       </Routes>
       <Footer />
-    </div>
+    </div >
   )
 }
 

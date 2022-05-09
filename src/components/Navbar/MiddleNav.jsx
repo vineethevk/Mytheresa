@@ -11,7 +11,7 @@ export const MiddleNav = () => {
                 </Link>
             </div>
             <div className='Cart'>
-                <Link to="/">
+                <Link to="/cart">
                     <span>SHOPPING BAG</span>
                     <span className='CartIcon'>{cart.length}</span>
                 </Link>
