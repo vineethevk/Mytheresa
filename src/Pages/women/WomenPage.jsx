@@ -112,7 +112,7 @@ export const WomenPage = () => {
 
         </div>
         <Link to="/womenproducts">
-          <button className="btn-shop">SHOP NOW</button></Link>
+          <button className="btn-shop last-btn">SHOP NOW</button></Link>
         <hr></hr>
       </div>
       <div className="texts-div">

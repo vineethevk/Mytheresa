@@ -14,7 +14,7 @@ export const TopNav = () => {
             <div className='TopRight'>
                 <ul>
                     <li><Link to="/">Signup for Newsletter</Link></li>
-                    <li><Link to="/">My account</Link></li>
+                    <li><Link to="/login">My account</Link></li>
                     <li><Link to="/">My wishlist {<AiOutlineHeart />}</Link></li>
                     <li><Link to="/">International | English</Link></li>
                 </ul>
