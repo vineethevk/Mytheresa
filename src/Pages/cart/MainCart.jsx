@@ -1,56 +1,49 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
+import "./Cart.css"
 
 const MainCart = () => {
-  return (
-   <div>
-<div  >
+    const [price, setPrice] = useState(0);
+    const data = useSelector((store) => store.cart);
+    useEffect(() => {
+        data.map((e) => setPrice((price) => price + e.price))
 
-<h2>YOUR SHOPPING BAG</h2>
-<button  style={{display:'flex' , width:250,marginLeft:1200}}>PROCEED TO CHECKOUT</button>
-</div>
+        return (() => {
+            setPrice(0);
+        })
+    })
 
-<div style={{display:'flex' ,margin:'auto'}}>
+    return (
+        <div className='Cartmain'>
+            <div className='Header'>
+                <h4>YOUR SHOPPING BAG</h4>
+                <button>PROCEED TO CHECKOUT</button>
+            </div>
+            {data.map((e) => {
+                return (
+                    <div className='Products'>
+                        <div className='ProductImg'>
+                            <img src={`${e.images.img1}`} alt="" />
+                        </div>
+                        <div>
+                            <h5>{e.brandName}</h5>
+                            <h6>{e.name}</h6>
+                        </div>
+                        <div className='details'>
+                            <p>1 x € {e.price}</p>
+                        </div>
+                    </div>)
 
-    <div   style={{display:'flex'}}>
-        <div> 
-        <img src="https://img.mytheresa.com/560/560/33/jpeg/catalog/product/1c/P00629177_d2.jpg" alt="" srcset="" style={{width:100}}/>
+            })}
 
+            <div className='Total'>
+                <h5>SubTotal</h5>
+                <p>{price}.00</p>
+            </div>
         </div>
-        <div>
-        <h5>Givenchy</h5>
-            <h6>Giv 1 lace-up sneakers</h6>
-            <p>1 x € 895.00</p>
-            <button> remove</button>
-        </div>
-    </div>
 
 
-    <div    style={{display:'flex'}}>
-
-      <div>
-<h6>Price</h6>
-      <p>895</p>
-      </div>
-      <div>
-          <h6>Quantity</h6>
-          <p> 2 </p>
-      </div>
-      <div>
-          <h6>SubTotal</h6>
-<p>1790.00</p>
-
-      </div>
-
-
-
-
-
-
-    </div>
-</div>
-   </div>
-
-  )
+    )
 }
 
 export default MainCart
