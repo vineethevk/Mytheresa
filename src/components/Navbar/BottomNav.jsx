@@ -3,9 +3,11 @@ import "./BottomNav.css";
 import { GoSearch } from 'react-icons/go'
 import { useEffect, useRef, useState } from "react";
 import { Dropdown } from "./Dropdown";
+import { useSelector } from "react-redux";
 
 
 export const BottomNav = ({ data }) => {
+    const cart = useSelector((store) => store.cart)
     const option = data
 
     const [search, setSearch] = useState(false);
@@ -43,7 +45,7 @@ export const BottomNav = ({ data }) => {
                     </ul>
                 </div>
                 <div className="BottomRight">
-                    {sticky ? <span className='CartIcon'>0</span> : <div className="Searchbar">
+                    {sticky ? <span className='CartIcon'>{cart.length}</span> : <div className="Searchbar">
                         {search ? <div><input type={"text"} placeholder="Search for ..." /><button><GoSearch /></button></div> : <button onClick={() => setSearch(true)}><GoSearch /></button>}
                     </div>}
                 </div>

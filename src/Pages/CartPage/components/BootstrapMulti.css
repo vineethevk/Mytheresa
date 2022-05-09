@@ -9,17 +9,21 @@
   z-index: 1;
   border-radius: 5px;
 }
+
 .slick-prev::before,
 .slick-next::before {
   display: none;
 }
+
 .BootstrapMulti .slick-arrow.slick-prev {
   left: -50px;
 }
+
 .BootstrapMulti .slick-arrow.slick-next {
   right: -50px;
 }
-button {
+
+/* button {
   outline: none;
   border: none;
   color: #7ac400;
@@ -36,11 +40,12 @@ button:hover {
   background: #7ac400;
   color: white;
   cursor: pointer;
-}
+} */
 .BootstrapMulti .slick-dots li button:before {
   font-size: 15px;
 }
-.Card{
+
+.Card {
 
   width: 100px;
 }

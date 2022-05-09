@@ -12,7 +12,7 @@ export const WomenProducts = () => {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
-    axios.get("http://localhost:8080/womensdata1").then(({ data }) => {
+    axios.get("http://localhost:8080/womensdata").then(({ data }) => {
       setProducts(data)
     })
   }, [])
@@ -140,9 +140,9 @@ export const WomenProducts = () => {
         <div className="list_container">
           {products.map((e) => {
             return (
-              <Link to={`/womensdata1/${e.id}`}>
-                <div className="women_card" key={e.name}>
-                  <img className="women_image" src={e.images.img1} />
+              <Link to={`/product/women/${e.id}`}>
+                <div className="women_card" key={e.id}>
+                  <img className="women_image" src={e.images.img2} />
                   <p className="women_brandName">{e.brandName}</p>
                   <p className="women_name">{e.name}</p>
                   <h3 className="women_price">€{e.price}</h3>

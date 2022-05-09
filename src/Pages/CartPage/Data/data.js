@@ -20,16 +20,16 @@ import multicar11 from "../components/assets/multicar11.jpeg";
 
 
 export const data = [image1, image2, image3, image4, image5, image6];
-export const multiData = [
-  multicar1,
-  multicar10,
-  multicar2,
-  multicar3,
-  multicar11,
-  multicar4,
-  multicar5,
-  multicar9,
-  multicar6,
-  multicar7,
-  multicar8,
-];
+// export const multiData = [
+//   multicar1,
+//   multicar10,
+//   multicar2,
+//   multicar3,
+//   multicar11,
+//   multicar4,
+//   multicar5,
+//   multicar9,
+//   multicar6,
+//   multicar7,
+//   multicar8,
+// ];
