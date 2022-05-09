@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import "./Cart.css"
+import { useNavigate } from 'react-router-dom'
+
+
 
 const MainCart = () => {
+
+    const navigate=useNavigate()
     const [price, setPrice] = useState(0);
     const data = useSelector((store) => store.cart);
     useEffect(() => {
@@ -17,7 +22,9 @@ const MainCart = () => {
         <div className='Cartmain'>
             <div className='Header'>
                 <h4>YOUR SHOPPING BAG</h4>
-                <button>PROCEED TO CHECKOUT</button>
+                <button onClick={()=>{
+                    navigate("/Paymentgateway")
+                }}>PROCEED TO CHECKOUT</button>
             </div>
             {data.map((e) => {
                 return (

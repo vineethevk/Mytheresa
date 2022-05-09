@@ -1,0 +1,21 @@
+
+
+.maindiv{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 50%;
+    margin: 40px 25%;
+    padding: 50px;
+    border-radius: 3px;
+
+}
+.maindiv input{
+    padding: 10px;
+    margin: 5px;
+    
+}
+.mybutton{
+    padding: 10px;
+    background-color: black;
+    color: white;
+}

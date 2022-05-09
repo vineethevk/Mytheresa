@@ -10,6 +10,7 @@ import { MenPage } from "./Pages/MenPage/MenPage"
 import Card from "./Pages/CartPage/components/Card"
 import './App.css'
 import MainCart from "./Pages/cart/MainCart"
+import {Payment} from "./Pages/PaymentPage/Payment"
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/product/women/:id" element={<Card link={"womensdata"} />}></Route>
         <Route path="/product/men/:id" element={<Card link={"mendata"} />}></Route>
         <Route path="/cart" element={<MainCart />}></Route>
+        <Route path="/Paymentgateway" element={<Payment></Payment>}></Route>
       </Routes>
       <Footer />
     </div >
