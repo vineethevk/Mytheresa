@@ -1,6 +1,8 @@
+import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import './MiddleNav.css'
 export const MiddleNav = () => {
+    const cart = useSelector((store) => store.cart)
     return (
         <div className='MiddleNav'>
             <div className="MiddleNavLogo">
@@ -11,7 +13,7 @@ export const MiddleNav = () => {
             <div className='Cart'>
                 <Link to="/">
                     <span>SHOPPING BAG</span>
-                    <span className='CartIcon'>0</span>
+                    <span className='CartIcon'>{cart.length}</span>
                 </Link>
 
             </div>

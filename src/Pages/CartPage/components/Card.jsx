@@ -10,14 +10,17 @@ import Carousel from '../Data/Carousel'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router';
+import { useDispatch } from 'react-redux';
+import { updateCart } from '../../../Redux/action';
 
 
 
 const Card = ({ link }) => {
 
-  const { id } = useParams()
-  // console.log(id);
+  // Vineeth Code Start
 
+  const dispatch = useDispatch();
+  const { id } = useParams()
 
   const [product, setProduct] = useState({
     images: []
@@ -41,6 +44,7 @@ const Card = ({ link }) => {
 
   }, [product])
 
+  // Vineeth Code ends
   const ITEM_HEIGHT = 48;
   const ITEM_PADDING_TOP = 8;
   const MenuProps = {
@@ -102,9 +106,9 @@ const Card = ({ link }) => {
         </div>
         <div className='main-box-right'>
           <div className='right-box-content' style={{ justifyContent: 'flex-start' }}>
-            <h3>AURALEE</h3>
-            <h5>Wool-blend coat</h5>
-            <h5>€ 1,475</h5>
+            <h3>{product.brandName}</h3>
+            <h5>{product.name}</h5>
+            <h5>€ {product.price}</h5>
             <p>VAT exception. VAT not included. <br />
               item no. P00648789</p>
             <div>
@@ -140,7 +144,7 @@ const Card = ({ link }) => {
                 </Select>
               </FormControl>
             </div>
-            <Button onClick={addtocart()} className='btn' variant="contained" style={{ color: 'White', backgroundColor: 'black', marginBottom: 9 }}>    ADD TO  SHOPPING BAG  </Button> <br />
+            <Button onClick={() => (dispatch(updateCart(product)))} className='btn' variant="contained" style={{ color: 'White', backgroundColor: 'black', marginBottom: 9 }}>    ADD TO  SHOPPING BAG  </Button> <br />
             <Button className='btn' variant="contained" style={{ color: 'black', backgroundColor: 'aliceblue', width: '25', marginBottom: 35 }}>    ADD TO  WISHLIST   ✰ </Button>
 
             <hr />
