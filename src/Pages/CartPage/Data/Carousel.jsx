@@ -63,7 +63,7 @@ const Carousel = ({ image }) => {
         dotsClass="slick-dots custom-indicator"
       >
         {image.map((item) => (
-          <div className="BigImg">
+          <div className="BigImg" key={item}>
             <img src={item} />
             {/* <img src={item} alt="" style={{ width: "60%", height: "60vh", justifyContent: "center" }} /> */}
           </div>
