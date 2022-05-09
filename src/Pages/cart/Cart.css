@@ -1,0 +1,39 @@
+
+
+/* 
+*{
+
+    width: 400px;
+   
+} */
+
+
+
+cart-main-box{
+
+height: inherit;
+
+width: 200px;
+
+    border: 1px solid red;
+    
+    margin:auto;
+    justify-content: center;
+   
+}
+.Cart{
+
+    margin:auto;
+    justify-content: center;
+    width: 40%;
+}
+.product{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    width: 50%;
+    margin: auto;
+}
