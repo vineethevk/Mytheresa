@@ -12,10 +12,11 @@ export const WomenProducts = () => {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
-    axios.get("http://54.167.67.179:8080/womensdata1").then(({ data }) => {
+    axios.get("http://54.147.212.115:5000/womensdata1").then(({ data }) => {
       setProducts(data)
     })
   }, [])
+  
   // console.log(products)
   const handlechange = (e) => {
     if (e.target.value == "low-to-high") {
