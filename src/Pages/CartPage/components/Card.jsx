@@ -17,7 +17,7 @@ import { updateCart } from '../../../Redux/action';
 
 const Card = ({ link }) => {
 
-  // Vineeth Code Start
+  // Vineeth Code Starts
 
   const dispatch = useDispatch();
   const { id } = useParams()
@@ -28,8 +28,9 @@ const Card = ({ link }) => {
   const [image, setImage] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://localhost:8080/${link}/${id}`).then(({ data }) => {
+    axios.get(`${link}/${id}`).then(({ data }) => {
       setProduct(data)
+      console.log(data)
     })
 
   }, [])

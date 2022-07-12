@@ -12,10 +12,14 @@ export const MenProducts = () => {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
-    axios.get("http://localhost:8080/mendata").then(({ data }) => {
+    getData();
+  }, [])
+
+  const getData = async () => {
+    await axios.get("http://3.86.143.44:5050/mensdata1").then(({ data }) => {
       setProducts(data)
     })
-  }, [])
+  }
   const handlechange = (e) => {
     if (e.target.value == "low-to-high") {
       setProducts((product) => [...products.sort((a, b) => (a.price - b.price))])
@@ -138,8 +142,8 @@ export const MenProducts = () => {
         <div className="list_container">
           {products.map((e) => {
             return (
-              <Link to={`/product/men/${e.id}`}>
-                <div className="women_card" key={e.id}>
+              <Link to={`/product/men/${e._id}`}>
+                <div className="women_card" key={e._id}>
                   <img className="women_image" src={e.images.img1} />
                   <p className="women_brandName">{e.brandName}</p>
                   <p className="women_name">{e.name}</p>
