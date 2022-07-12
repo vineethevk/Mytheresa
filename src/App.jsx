@@ -1,4 +1,4 @@
-import { Footer } from "./components/Footer/footer"
+import { Footer } from "./components/Footer/Footer"
 import { Route, Routes } from "react-router-dom"
 import { Navbar } from "./components/Navbar/Navbar"
 import { Home } from "./Pages/HomePage/Home"
@@ -10,6 +10,8 @@ import { MenPage } from "./Pages/MenPage/MenPage"
 import Card from "./Pages/CartPage/components/Card"
 import './App.css'
 import MainCart from "./Pages/cart/MainCart"
+import { Payment } from "./Pages/PaymentPage/Payment"
+// import { Test } from "./Pages/Test"
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
         <Route path="/product/women/:id" element={<Card link={"http://18.212.97.104:8080/womensdata1"} />}></Route>
         <Route path="/product/men/:id" element={<Card link={"http://3.86.143.44:5050/mensdata1"} />}></Route>
         <Route path="/cart" element={<MainCart />}></Route>
+        <Route path="/Paymentgateway" element={<Payment />}></Route>
+        {/* <Route path="/test" element={<Test />}></Route> */}
       </Routes>
       <Footer />
     </div >
