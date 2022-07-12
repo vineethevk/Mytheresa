@@ -13,18 +13,13 @@ export const WomenProducts = () => {
 
   useEffect(() => {
     getData();
-    // axios.get("http://localhost:8080/womensdata").then(({ data }) => {
-    //   setProducts(data)
-    // })
   }, [])
 
   const getData = async () => {
     await axios.get("http://18.212.97.104:8080/womensdata1").then(({ data }) => {
       setProducts(data);
-      // console.log(data);
     })
   }
-  // console.log(products)
   const handlechange = (e) => {
     if (e.target.value == "low-to-high") {
       setProducts((product) => [...products.sort((a, b) => (a.price - b.price))])
@@ -34,7 +29,7 @@ export const WomenProducts = () => {
     }
 
   }
-  // console.table(products);
+
   return (
     <>
       <BottomNav data={data} />
