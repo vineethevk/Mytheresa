@@ -24,8 +24,8 @@ function App() {
         <Route path="/men" element={<MenPage />}></Route>
         <Route path="/menproducts" element={<MenProducts />}></Route>
         <Route path="/login" element={<LoginAndRegister />}></Route>
-        <Route path="/product/women/:id" element={<Card link={"womensdata"} />}></Route>
-        <Route path="/product/men/:id" element={<Card link={"mendata"} />}></Route>
+        <Route path="/product/women/:id" element={<Card link={"http://18.212.97.104:8080/womensdata1"} />}></Route>
+        <Route path="/product/men/:id" element={<Card link={"http://3.86.143.44:5050/mensdata1"} />}></Route>
         <Route path="/cart" element={<MainCart />}></Route>
       </Routes>
       <Footer />

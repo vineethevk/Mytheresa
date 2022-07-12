@@ -12,15 +12,16 @@ export const WomenProducts = () => {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
-    // getData();
-    axios.get("http://18.212.97.104:8080/womensdata1").then(({ data }) => {
-      setProducts(data)
-    })
+    getData();
+    // axios.get("http://localhost:8080/womensdata").then(({ data }) => {
+    //   setProducts(data)
+    // })
   }, [])
 
   const getData = async () => {
-    await axios.get("http://18.212.97.104:8080/womensdata1").then((data) => {
-      console.log(data);
+    await axios.get("http://18.212.97.104:8080/womensdata1").then(({ data }) => {
+      setProducts(data);
+      // console.log(data);
     })
   }
   // console.log(products)
@@ -147,8 +148,8 @@ export const WomenProducts = () => {
         <div className="list_container">
           {products.map((e) => {
             return (
-              <Link to={`/product/women/${e.id}`}>
-                <div className="women_card" key={e.id}>
+              <Link to={`/product/women/${e._id}`}>
+                <div className="women_card" key={e._id}>
                   <img className="women_image" src={e.images.img2} />
                   <p className="women_brandName">{e.brandName}</p>
                   <p className="women_name">{e.name}</p>
