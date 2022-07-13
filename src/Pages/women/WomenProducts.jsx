@@ -16,7 +16,7 @@ export const WomenProducts = () => {
   }, [])
 
   const getData = async () => {
-    await axios.get("http://18.212.97.104:8080/womensdata1").then(({ data }) => {
+    await axios.get("https://mytheresa-server.herokuapp.com/womens").then(({ data }) => {
       setProducts(data);
     })
   }

@@ -16,8 +16,9 @@ export const MenProducts = () => {
   }, [])
 
   const getData = async () => {
-    await axios.get("http://3.86.143.44:5050/mensdata1").then(({ data }) => {
+    await axios.get("https://mytheresa-server.herokuapp.com/mens").then(({ data }) => {
       setProducts(data)
+      console.log(products);
     })
   }
   const handlechange = (e) => {
