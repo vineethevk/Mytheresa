@@ -28,7 +28,7 @@ const Card = ({ link }) => {
   const [image, setImage] = useState([]);
 
   useEffect(() => {
-    axios.get(`${link}/${id}`).then(({ data }) => {
+    axios.get(`https://mytheresa-server.herokuapp.com/${link}/${id}`).then(({ data }) => {
       setProduct(data)
       console.log(data)
     })
